@@ -13,6 +13,7 @@ public:
 	User();
 	User(string name, string pass);
 	const string& getName() const;
+	const string& getPass() const;
 	void ChangePassword(string pass);
 };
 
