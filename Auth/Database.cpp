@@ -3,7 +3,7 @@
 using D = Database;
 
 bool D::AddUser(string name, string pass) {
-	if (DB.find(name) == DB.end() || DB.begin() == DB.end()) {
+	if (DB.find(name) == DB.end()) {
 		DB[name] = User(name, pass);
 		return true;
 	}
