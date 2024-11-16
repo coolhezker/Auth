@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="DBFile.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auth.h" />
+    <ClInclude Include="DBFile.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>

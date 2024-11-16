@@ -1,4 +1,6 @@
 #include "Database.h"
+#include <iostream>
+#include <iomanip>
 
 using D = Database;
 
@@ -18,6 +20,10 @@ bool D::RemoveUser(string name) {
 	return false;
 }
 
+const unordered_map<string, User>& D::ReturnDB() {
+	return DB;
+}
+
 User* D::FindUser(string name) {
 	auto it = DB.find(name);
 	if (it != DB.end()) {
@@ -25,3 +31,12 @@ User* D::FindUser(string name) {
 	}
 	return nullptr;
 }
+
+void D::PrintDB() {
+	std::cout << "USER" << setw(10) << "" << "PASSWORD\n";
+	for (auto it = DB.begin(); it != DB.end(); it++) 
+		std::cout << std::setiosflags(ios::left) << std::setw(14) 
+			<< it->second.getName() << std::resetiosflags(ios::left) 
+			<< std::setiosflags(ios::right) << it->second.getPass() 
+			<< std::resetiosflags(ios::right) << std::endl;
+} 

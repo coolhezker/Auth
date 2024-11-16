@@ -5,11 +5,11 @@ U::User() {};
 
 U::User(string name, string pass) : Name{ name }, Password{ pass } {};
 
-const string& U::getName() const {
+string U::getName() const {
 	return Name;
 }
 
-const string& U::getPass() const {
+string U::getPass() const {
 	return Password;
 }
 

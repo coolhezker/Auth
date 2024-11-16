@@ -8,11 +8,13 @@
 using namespace std;
 
 class Database {
-private:
+protected:
 	unordered_map<string, User> DB;
 public:
 	bool AddUser(string name, string pass);
 	bool RemoveUser(string name);
+	void PrintDB();
+	const unordered_map<string, User>& ReturnDB();
 	User* FindUser(string name);
 };
 
