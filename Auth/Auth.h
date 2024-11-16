@@ -4,9 +4,8 @@
 #include "Database.h"
 
 struct Auth {
-	string HashPassword(string pass);
 	bool Registration(Database& db, string name, string pass);
-	bool Authorization(const Database& db, string name, string pass) const;
+	bool Authentication(Database& db, string name, string pass) const;
 };
 
 #endif

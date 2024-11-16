@@ -18,6 +18,10 @@ bool D::RemoveUser(string name) {
 	return false;
 }
 
-auto D::FindUser(string name) {
-	return DB.find(name);
+User* D::FindUser(string name) {
+	auto it = DB.find(name);
+	if (it != DB.end()) {
+		return &it->second;
+	}
+	return nullptr;
 }

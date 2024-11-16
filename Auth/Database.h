@@ -13,7 +13,7 @@ private:
 public:
 	bool AddUser(string name, string pass);
 	bool RemoveUser(string name);
-	auto FindUser(string name);
+	User* FindUser(string name);
 };
 
 #endif // !DATABASE_H
