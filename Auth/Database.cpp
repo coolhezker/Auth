@@ -4,6 +4,27 @@
 
 using D = Database;
 
+D::Database() {};
+
+D::Database(const Database& D) : DB{ D.DB } {};
+
+D::Database(Database&& D) noexcept : DB{ D.DB } {
+	D.DB = unordered_map<std::string, User>();
+}
+
+Database& D::operator=(const Database& D) {
+	if (this == &D)
+		return *this;
+	DB = D.DB;
+}
+
+Database& D::operator=(Database&& D) noexcept {
+	if (this == &D)
+		return *this;
+	DB = D.DB;
+	D.DB = unordered_map<std::string, User>();
+}
+
 bool D::AddUser(string name, string pass) {
 	if (DB.find(name) == DB.end()) {
 		DB[name] = User(name, pass);
@@ -18,10 +39,6 @@ bool D::RemoveUser(string name) {
 		return true;
 	}
 	return false;
-}
-
-const unordered_map<string, User>& D::ReturnDB() {
-	return DB;
 }
 
 User* D::FindUser(string name) {

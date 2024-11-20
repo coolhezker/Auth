@@ -12,6 +12,11 @@ protected:
 public:
 	User();
 	User(string name, string pass);
+	User(const User& U);
+	User(User&& U) noexcept;
+	User& operator=(const User& U);
+	User& operator=(User&& U) noexcept;
+
 	string getName() const;
 	string getPass() const;
 	void ChangePassword(string pass);
