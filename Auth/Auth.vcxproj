@@ -24,6 +24,7 @@
     <ProjectGuid>{f64be536-9fd1-4bd7-8f8b-b5243b543465}</ProjectGuid>
     <RootNamespace>Auth</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>UserDatabase</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -130,7 +131,6 @@
     <ClCompile Include="Auth.cpp" />
     <ClCompile Include="DBFile.cpp" />
     <ClCompile Include="Database.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
