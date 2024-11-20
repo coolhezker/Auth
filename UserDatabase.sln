@@ -5,6 +5,35 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UserDatabase", "Auth\Auth.vcxproj", "{F64BE536-9FD1-4BD7-8F8B-B5243B543465}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{03C69AFC-6EB6-44F7-8D89-9A6E20D3E87A}"
+	ProjectSection(SolutionItems) = preProject
+		main.cpp = main.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{4BC9BE3D-C415-4FF0-8152-19FD9B040B2F}"
+	ProjectSection(SolutionItems) = preProject
+		Auth\Database.cpp = Auth\Database.cpp
+		Auth\Database.h = Auth\Database.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{B70102E7-D42D-4AB8-A7FC-EEEC1CEB00A8}"
+	ProjectSection(SolutionItems) = preProject
+		Auth\User.cpp = Auth\User.cpp
+		Auth\User.h = Auth\User.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{5FA897AB-2892-4784-BFE9-64D7BBD448D5}"
+	ProjectSection(SolutionItems) = preProject
+		Auth\Auth.cpp = Auth\Auth.cpp
+		Auth\Auth.h = Auth\Auth.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBFile", "DBFile", "{208FB634-26B2-46BD-BAEA-ED8B4AB83D7B}"
+	ProjectSection(SolutionItems) = preProject
+		Auth\DBFile.cpp = Auth\DBFile.cpp
+		Auth\DBFile.h = Auth\DBFile.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
