@@ -2,5 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="DBFile.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Auth.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="User.h" />
+    <ClInclude Include="DBFile.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Auth.h" />
   </ItemGroup>
 </Project>
